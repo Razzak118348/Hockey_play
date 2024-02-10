@@ -1,82 +1,424 @@
 <!DOCTYPE html>
 <html data-theme="light" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hocky</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hocky</title>
 
-    <!-- tailwind and daisy ui  -->
-    
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind and daisy ui  -->
 
-<!-- manrope font  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<style>
-    .font{
-        font-family: 'Manrope', sans-serif;
+  <!-- manrope font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    .font {
+      font-family: 'Manrope', sans-serif;
     }
-    .samecolor{
-        background-color:  #FF4240;
 
-    }
-    .samefontcolor{
-       color:  #FF4240;
+    .samecolor {
+      background-color: #FF4240;
 
     }
-</style>
+
+    .samefontcolor {
+      color: #FF4240;
+
+    }
+
+    p {
+      font-weight: 500;
+    }
+    .image1{
+          background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.578), rgba(0, 0, 0, 0.392)),url('./Images/2.png');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+        }
+        .image2{
+          background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.348)),
+    url('./Images/3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+        }
+        .image3{
+          background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.565), rgba(0, 0, 0, 0.471)),
+    url('./Images/4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+        }
+        .image-width{
+          width: 75%;
+        }
+  </style>
 
 </head>
+
 <body class="font">
-    <header class="container  mx-auto my-20">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                     <li class="samefontcolor"><a href="">Home</a></li>
-                     <li><a href="">About</a></li>
-                     <li><a href="">Pages</a></li>
-                     <li><a href="">Blog</a></li>
-                     <li><a href="">Contact</a></li>
-                    
-                      
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-5xl font-extrabold">Hockey<span class="samefontcolor">'</span>s</a>
+  <header class="container  mx-auto my-20">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li class="samefontcolor"><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+
+
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-5xl font-extrabold">Hockey<span class="samefontcolor">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="samefontcolor text-xl font-bold"><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end ">
+          <img class="hidden lg:flex lg:w-6 lg:h-6 lg:mr-4" src="./Images/search.png " alt="">
+          <a class="btn samecolor font-bold text-xl text-white px-4 ">Get Ticket</a>
+        </div>
+      </div>
+
+      <!-- banner  section> -->
+      <section>
+        <div class="carousel w-full rounded-xl my-6 lg:my-12 h-auto">
+          <div id="slide1" class="carousel-item relative w-full ">
+            <img src="./Images/1.png" class="w-full" />
+            <div class="absolute flex justify-items-end  gap-6 transform -translate-y-1/2 left-5 right-5 top-3/4 ">
+              <a href="#slide4" class="btn btn-circle bg-black text-white text-lg ">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white text-lg">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full ">
+            <img src="./Images/2.png" class="w-full" />
+            <div class="absolute flex justify-items-end  gap-6 transform -translate-y-1/2 left-5 right-5 top-3/4 ">
+              <a href="#slide1" class="btn btn-circle bg-black text-white text-lg ">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-black text-white text-lg">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full ">
+            <img src="./Images/3.png" class="w-full" />
+            <div class="absolute flex justify-items-end  gap-6 transform -translate-y-1/2 left-5 right-5 top-3/4 ">
+              <a href="#slide2" class="btn btn-circle bg-black text-white text-lg ">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-black text-white text-lg">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full ">
+            <img src="./Images/4.png" class="w-full" />
+            <div class="absolute flex justify-items-end  gap-6 transform -translate-y-1/2 left-5 right-5 top-3/4">
+              <a href="#slide3" class="btn btn-circle bg-black text-white text-lg ">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-black text-white text-lg">❯</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="lg:absolute  bg-black text-white lg:h-[20vh] lg:w-1/3 mx-auto rounded-3xl top-full right-56 text-left p-6">
+          <h4 class="text-xl font-bold mb-5">Meet all the heroes from the field</h4>
+          <p>Success can not come without hardwork . Every successfull man and women have a stragle life jurney.Practice
+            makes a man perfect.</p>
+        </div>
+      </section>
+    </nav>
+    <hr style="border-top: 1px dashed gray; width: 100%; margin-left:auto ; margin-right: auto; margin-top: 1rem;">
+  </header>
+
+  <main class="container  mx-auto my-12 lg:my-24">
+    <!-- professional hocky club  -->
+    <section class="lg:mb-40 mb-10">
+      <div class=" text-center mx-auto lg:max-w-3xl lg:mb-20 mb-10">
+        <h2 class=" text-2xl lg:text-5xl  font-extrabold mb-5">Professional Hockeys Club</h2>
+        <p>Prior to 1904, playing for pay was not favored by major hockey circuits, as they were established as purely
+          amateur organizations.</p>
+        <hr style="border-top: 1px dashed gray; width: 80%; margin-left:auto ; margin-right: auto; margin-top: 1rem;">
+      </div>
+      <div class="flex flex-col lg:flex-row gap-7 lg:gap-10 lg:mx-auto justify-center items-center">
+        <div class="flex-row text-center max-w-64 space-y-4">
+          <div class="radial-progress text-2xl font-extrabold text-red-600 "
+            style="--value:87; --size:8rem; --thickness: 1rem; " role="progressbar"><span class="text-black">87%</span>
+          </div>
+          <h4 class="text-lg font-bold ">Prayer Facility</h4>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="flex-row text-center max-w-64 space-y-4">
+          <div class="radial-progress text-2xl font-extrabold text-green-600 "
+            style="--value:95; --size:8rem; --thickness: 1rem; " role="progressbar"><span class="text-black">95%</span>
+          </div>
+          <h4 class="text-lg font-bold ">Experienced Coach</h4>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="flex-row text-center max-w-64 space-y-4">
+          <div class="radial-progress text-2xl font-extrabold text-yellow-400 "
+            style="--value:90; --size:8rem; --thickness: 1rem; " role="progressbar"><span class="text-black">90%</span>
+          </div>
+          <h4 class="text-lg font-bold ">Senior Player</h4>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div class="flex-row text-center max-w-64 space-y-4">
+          <div class="radial-progress text-2xl font-extrabold text-[#4C8DF1] "
+            style="--value:80; --size:8rem; --thickness: 1rem; " role="progressbar"><span class="text-black">80%</span>
+          </div>
+          <h4 class="text-lg font-bold ">Training Ground</h4>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+
+
+      </div>
+      <hr
+      style="border-top: 1px dashed gray; width: 100%; margin-left:auto ; margin-right: auto; margin-top: 3rem; margin-bottom: 3rem;">
+   
+    </section>
+
+    <!-- programe section  -->
+
+    <section class="lg:mb-40 mb-10">
+      
+      <div class=" text-center mx-auto lg:max-w-3xl lg:mb-20 mb-12">
+        <h2 class=" text-2xl lg:text-5xl  font-extrabold mb-5">Programe Section</h2>
+        <p>The Program Services department provides resources for both growing your membership at the youngest levels as
+          well as foundational guidelines for leading your local youth hockey association with intent.
+
+          Learn more by visiting our "Grow" or "Lead" resources or contact our team to get more information at
+          programservices@usahockey.org. </p>
+          <hr
+          style="border-top: 1px dashed gray; width: 70%; margin-left:auto ; margin-right: auto; margin-top: 1rem; margin-bottom: 3rem;">
+      </div>
+     
+      <div class="flex flex-col lg:flex-row lg:justify-between gap-8">
+        <div class="image1 w-full lg:w-1/2 h-[50vh] px-5 lg:px-10 lg:pt-44 pt-20 text-white rounded-xl">
+          <!-- <img src="./Images/2.png" alt=""> -->
+          <h3 class="text-2xl font-bold mb-2 lg:mb-5 ">Junior Program</h3>
+          <p>USA Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their skills and is an important part of the organization's overall efforts related to player development. </p>
+          <button class="samecolor text-white text-xl font-bold px-5 py-3 mt-6 rounded-lg">Register Now!</button>
+        </div> 
+
+        <div class="image2 w-full lg:w-1/2 h-[50vh] px-5 lg:px-10 lg:pt-44 pt-20 text-white rounded-xl">
+          <!-- <img src="./Images/2.png" alt=""> -->
+          <h3 class="text-2xl font-bold mb-2 lg:mb-5 ">Teenager Program</h3>
+          <p>A six week program focused on the development of forward and backward skating, crossovers, tight-turns, individual shooting, stick handling, creativity, passing, as well as game situation type skills. For boys and girls ages 6-13. </p>
+          <button class="samecolor text-white text-xl font-bold px-5 py-3 mt-6 rounded-lg">Register Now!</button>
+        </div>  
+      </div>
+      <div class="image3 w-full h-[50vh] lg:h-[70vh] mt-8 rounded-xl px-5 lg:px-10 pt-20 lg:pt-72 text-white  ">
+        <h2 class="text-2xl font-bold mb-2 lg:mb-5 ">Professional Program</h2>
+        <p class="max-w-3xl ">“This program was designed as a specialized hockey program from the ground up,” says Manav Deol, managing director of BHI, a non-profit organization that collaborated with AU to provide course content designed to elevate the business side of Canada’s game.</p>
+        <button class="samecolor text-white text-xl font-bold px-5 py-3 mt-6 rounded-lg">Register Now!</button>
+      </div>
+    </section>
+    
+    <!-- product section  -->
+    <section class="lg:mb-30 mb-10">
+      <div class="text-center max-w-auto ">
+        <h2 class=" text-2xl lg:text-5xl  font-extrabold mb-5">Our New Products</h2>
+        <p>Prior to 1904, playing for pay was not favored by major hockey circuits, as they were established as purely
+          amateur organizations.</p>
+      </div>
+      <hr
+      style="border-top: 1px dashed gray; width: 50%; margin-left:auto ; margin-right: auto; margin-top: 2rem; margin-bottom: 5rem;">
+      <!-- card start  -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" >
+        <!-- first card  -->
+        <div class="  bg-base-200 rounded-xl">
+          <div class="hero-content flex-col lg:flex-row  pl-5">
+            <img src="./Images/5.png" class="lg:w-auto image-width rounded-lg shadow-2xl" />
+            <div class="mt-6 lg:mt-2">
+              <div class="flex mb-4">
+                <div class="flex font-light space-x-2 mr-5"><img class="w-4 h-4" src="./Images/star.png" alt=""> <span>5.0</span>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li class="samefontcolor text-xl font-bold"><a href="">Home</a></li>
-                     <li><a href="">About</a></li>
-                     <li><a href="">Pages</a></li>
-                     <li><a href="">Blog</a></li>
-                     <li><a href="">Contact</a></li>
-                  </ul>
+                <div class="flex font-light space-x-2 mr-5"><img class="w-6 h-6" src="./Images/eye.png" alt=""> <span>20</span>
                 </div>
-                <div class="navbar-end ">
-                    <img class="hidden lg:flex lg:w-6 lg:h-6 lg:mr-4" src="./Images/search.png " alt="">
-                  <a class="btn samecolor font-bold text-xl text-white px-4 ">Get Ticket</a>
+                <div class="flex font-light space-x-2"><img class="w-4 h-4 mt-1" src="./Images/like.png" alt=""> <span>200</span>
                 </div>
               </div>
+              <h1 class="text-xl lg:text-3xl font-bold">World Cup Flags Football</h1>
+              <p class="py-6">
+                This is a high quality jacket . A premiam quality fabrix use to made this jacket.
+              </p>
+              <div>
+                <div class="flex flex-row justify-between">
+                  <h4 class="text-lg font-bold samefontcolor">Price - $22.00</h4>
+                   <div class="flex space-x-3"> <img class="w-6 h-6" src="./Images/shopping-cart.png" alt="">
+                    <span>Delivery Fee : Free</span></div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- secont card  -->
+        <div class="  bg-base-200 rounded-xl">
+          <div class="hero-content flex-col lg:flex-row  pl-5">
+            <img src="./Images/6.png" class="lg:w-auto image-width rounded-lg shadow-2xl" />
+            <div class="mt-6 lg:mt-2">
+              <div class="flex mb-4">
+                <div class="flex font-light space-x-2 mr-5"><img class="w-4 h-4" src="./Images/star.png" alt=""> <span>5.0</span>
+                </div>
+                <div class="flex font-light space-x-2 mr-5"><img class="w-6 h-6" src="./Images/eye.png" alt=""> <span>20</span>
+                </div>
+                <div class="flex font-light space-x-2"><img class="w-4 h-4 mt-1" src="./Images/like.png" alt=""> <span>200</span>
+                </div>
+              </div>
+              <h1 class="text-xl lg:text-3xl font-bold">World Cup Flags Football</h1>
+              <p class="py-6">
+                This is a high quality jacket . A premiam quality fabrix use to made this jacket.
+              </p>
+              <div>
+                <div class="flex flex-row justify-between">
+                  <h4 class="text-lg font-bold samefontcolor">Price - $22.00</h4>
+                   <div class="flex space-x-3"> <img class="w-6 h-6" src="./Images/shopping-cart.png" alt="">
+                    <span>Delivery Fee : Free</span></div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- third card  -->
+        <div class=" bg-base-200 rounded-xl">
+          <div class="hero-content flex-col lg:flex-row  pl-5">
+            <img src="./Images/7.png" class="lg:w-auto image-width rounded-lg shadow-2xl" />
+            <div class="mt-6 lg:mt-2">
+              <div class="flex mb-4">
+                <div class="flex font-light space-x-2 mr-5"><img class="w-4 h-4" src="./Images/star.png" alt=""> <span>5.0</span>
+                </div>
+                <div class="flex font-light space-x-2 mr-5"><img class="w-6 h-6" src="./Images/eye.png" alt=""> <span>20</span>
+                </div>
+                <div class="flex font-light space-x-2"><img class="w-4 h-4 mt-1" src="./Images/like.png" alt=""> <span>200</span>
+                </div>
+              </div>
+              <h1 class="text-xl lg:text-3xl font-bold">World Cup Flags Football</h1>
+              <p class="py-6">
+                This is a high quality jacket . A premiam quality fabrix use to made this jacket.
+              </p>
+              <div>
+                <div class="flex flex-row justify-between">
+                  <h4 class="text-lg font-bold samefontcolor">Price - $22.00</h4>
+                   <div class="flex space-x-3"> <img class="w-6 h-6" src="./Images/shopping-cart.png" alt="">
+                    <span>Delivery Fee : Free</span></div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4th card  -->
+        <div class="  bg-base-200 rounded-xl">
+          <div class="hero-content flex-col lg:flex-row  pl-5">
+            <img src="./Images/8.png" class="lg:w-auto image-width rounded-lg shadow-2xl" />
+            <div class="mt-6 lg:mt-2">
+              <div class="flex mb-4">
+                <div class="flex font-light space-x-2 mr-5"><img class="w-4 h-4" src="./Images/star.png" alt=""> <span>5.0</span>
+                </div>
+                <div class="flex font-light space-x-2 mr-5"><img class="w-6 h-6" src="./Images/eye.png" alt=""> <span>20</span>
+                </div>
+                <div class="flex font-light space-x-2"><img class="w-4 h-4 mt-1" src="./Images/like.png" alt=""> <span>200</span>
+                </div>
+              </div>
+              <h1 class="text-xl lg:text-3xl font-bold">World Cup Flags Football</h1>
+              <p class="py-6">
+                This is a high quality jacket . A premiam quality fabrix use to made this jacket.
+              </p>
+              <div>
+                <div class="flex flex-row justify-between">
+                  <h4 class="text-lg font-bold samefontcolor">Price - $22.00</h4>
+                   <div class="flex space-x-3"> <img class="w-6 h-6" src="./Images/shopping-cart.png" alt="">
+                    <span>Delivery Fee : Free</span></div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5th card  -->
+        <div class="  bg-base-200 rounded-xl">
+          <div class="hero-content flex-col lg:flex-row  pl-5">
+            <img src="./Images/9.png" class="lg:w-auto image-width rounded-lg shadow-2xl" />
+            <div class="mt-6 lg:mt-2">
+              <div class="flex mb-4">
+                <div class="flex font-light space-x-2 mr-5"><img class="w-4 h-4" src="./Images/star.png" alt=""> <span>5.0</span>
+                </div>
+                <div class="flex font-light space-x-2 mr-5"><img class="w-6 h-6" src="./Images/eye.png" alt=""> <span>20</span>
+                </div>
+                <div class="flex font-light space-x-2"><img class="w-4 h-4 mt-1" src="./Images/like.png" alt=""> <span>200</span>
+                </div>
+              </div>
+              <h1 class="text-xl lg:text-3xl font-bold">World Cup Flags Football</h1>
+              <p class="py-6">
+                This is a high quality jacket . A premiam quality fabrix use to made this jacket.
+              </p>
+              <div>
+                <div class="flex flex-row justify-between">
+                  <h4 class="text-lg font-bold samefontcolor">Price - $22.00</h4>
+                   <div class="flex space-x-3"> <img class="w-6 h-6" src="./Images/shopping-cart.png" alt="">
+                    <span>Delivery Fee : Free</span></div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 6th card  -->
+        <div class="  bg-base-200 rounded-xl">
+          <div class="hero-content flex-col lg:flex-row  pl-5">
+            <img src="./Images/10.png" class="lg:w-auto image-width rounded-lg shadow-2xl" />
+            <div class="mt-6 lg:mt-2">
+              <div class="flex mb-4">
+                <div class="flex font-light space-x-2 mr-5"><img class="w-4 h-4" src="./Images/star.png" alt=""> <span>5.0</span>
+                </div>
+                <div class="flex font-light space-x-2 mr-5"><img class="w-6 h-6" src="./Images/eye.png" alt=""> <span>20</span>
+                </div>
+                <div class="flex font-light space-x-2"><img class="w-4 h-4 mt-1" src="./Images/like.png" alt=""> <span>200</span>
+                </div>
+              </div>
+              <h1 class="text-xl lg:text-3xl font-bold">World Cup Flags Football</h1>
+              <p class="py-6">
+                This is a high quality jacket . A premiam quality fabrix use to made this jacket.
+              </p>
+              <div>
+                <div class="flex flex-row justify-between">
+                  <h4 class="text-lg font-bold samefontcolor">Price - $22.00</h4>
+                   <div class="flex space-x-3"> <img class="w-6 h-6" src="./Images/shopping-cart.png" alt="">
+                    <span>Delivery Fee : Free</span></div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of card  -->
+      </div>
 
-              
-        </nav>
-    </header>
+    </section>
 
-    <main class="container  mx-auto my-20">
-
-    </main>
-
-    <footer>
-
-    </footer>
     
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+
 </body>
+
 </html>
